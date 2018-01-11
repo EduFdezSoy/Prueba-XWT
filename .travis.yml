@@ -1,0 +1,9 @@
+language: csharp
+solution: "./XWT-Prueba/XWT-Prueba.sln"
+before_install:
+- sudo apt-get -qq update
+- sudo apt-get install -y libmono-system-windows-forms4.0-cil
+script:
+- msbuild ./XWT-Prueba/XWT-Prueba.sln.sln
+notifications:
+email: eladrixhd@gmail.com
