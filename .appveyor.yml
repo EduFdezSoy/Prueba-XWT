@@ -4,5 +4,5 @@ before_build:
 - nuget restore
 
 build:
-  project: XWT-Prueba/XWT-Prueba.sln
+  project: \XWT-Prueba\XWT-Prueba.sln
   verbosity: minimal
