@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XWT-Prueba", "XWT-Prueba\XWT-Prueba.csproj", "{76C3A63A-5178-45CE-8D07-FF73A0EC110D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{76C3A63A-5178-45CE-8D07-FF73A0EC110D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76C3A63A-5178-45CE-8D07-FF73A0EC110D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76C3A63A-5178-45CE-8D07-FF73A0EC110D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76C3A63A-5178-45CE-8D07-FF73A0EC110D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {316EEF10-3BD3-4784-8E9E-5C54FF24C3AE}
+	EndGlobalSection
+EndGlobal
