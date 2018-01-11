@@ -2,6 +2,7 @@
 using Xwt;
 
 
+
 namespace XWT_Prueba
 {
     class XWT_Testeo
@@ -10,15 +11,11 @@ namespace XWT_Prueba
         static void Main()
         {
             Application.Initialize(ToolkitType.Gtk);
-            var mainWindow = new Window()
-            {
-                Title = "Xwt Demo Application",
-                Width = 877,
-                Height = 418
-            };
-            mainWindow.Show();
+            MainWindow ventanaPrincipal = new MainWindow();
+           
+            ventanaPrincipal.Show();
             Application.Run();
-            mainWindow.Dispose();
+            ventanaPrincipal.Dispose();
         }
     }
 }
