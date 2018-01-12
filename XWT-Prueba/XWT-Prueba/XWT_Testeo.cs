@@ -10,7 +10,7 @@ namespace XWT_Prueba
         [STAThread]
         static void Main()
         {
-            Application.Initialize(ToolkitType.Gtk);
+            Application.Initialize(Toolkit.NativeEngine.Type);
             MainWindow ventanaPrincipal = new MainWindow();
            
             ventanaPrincipal.Show();

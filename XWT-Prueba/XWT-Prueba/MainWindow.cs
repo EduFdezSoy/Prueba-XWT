@@ -26,10 +26,7 @@ namespace XWT_Prueba
             MenuItem _cerrar = new MenuItem("_Cerrar");
 
             //Evento al clickar en "cerrar"
-            _cerrar.Clicked += delegate
-            {
-                Application.Exit();
-            };
+            _cerrar.Clicked += _cerrar_Clicked;
 
             //Guarda el boton cerrar dentro de archivo
             _archivo.SubMenu.Items.Add(_cerrar);
@@ -47,8 +44,22 @@ namespace XWT_Prueba
 
             MainMenu = mimenu;
             #endregion
-            
 
+            CloseRequested += MainWindow_CloseRequested;
+
+
+        }
+
+        private void _cerrar_Clicked(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MainWindow_CloseRequested(object sender, CloseRequestedEventArgs args)
+        {
+            args.AllowClose = MessageDialog.Confirm("Este programa se va a cerrar...\n¿Estas seguro?", Command.Ok);
+            if (args.AllowClose)
+                Application.Exit();
         }
     }
 }
