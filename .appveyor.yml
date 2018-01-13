@@ -1,7 +1,7 @@
 image: Visual Studio 2017
 
 before_build:
-- nuget restore
+- nuget restore \XWT-Prueba\XWT-Prueba.sln
 
 build:
   project: \XWT-Prueba\XWT-Prueba.sln
